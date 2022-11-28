@@ -23,5 +23,5 @@ class Http_method:
 
     @staticmethod
     def delete(url, body):
-        result = requests.delete(url, json=body, headers=Http_methods.headers, cookies=Http_methods.cookie)
+        result = requests.delete(url, json=body, headers=Http_method.headers, cookies=Http_method.cookie)
         return result
